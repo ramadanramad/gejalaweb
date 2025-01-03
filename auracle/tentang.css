@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+/*about page */
+
+.About {
+    display: flex;
+    flex-direction: column; /* Mengatur konten dalam kolom */
+    align-items: center; /* Memusatkan konten secara horizontal */
+    justify-content: flex-start; /* Memastikan konten dimulai dari atas */
+    padding: 100px 5% 100px; /* Tambahkan padding-top agar tidak tertutup navbar */
+    background-color: white; /* Warna background putih */
+    position: relative;
+    min-height: 100vh; /* Mengatur tinggi minimal untuk mengisi layar */
+}
+
+.heading {
+    text-align: center; /* Memusatkan heading "About Us" secara horizontal */
+    margin-bottom: 50px; /* Jarak bawah untuk memisahkan heading dari konten */
+    font-size: 2.5rem;
+    color: #4caf50; /* Warna teks heading */
+    width: 100%; /* Memastikan heading mengambil lebar penuh */
+}
+
+/* Styling untuk konten dan gambar */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px; /* Jarak antara gambar dan tulisan */
+    width: 100%; /* Lebar penuh untuk baris */
+}
+
+.image-container {
+    flex: 1; /* Mengatur gambar agar mengambil ruang 1 bagian */
+}
+
+.image-container img {
+    max-width: 100%; /* Membuat gambar responsive */
+    height: auto; /* Menjaga rasio gambar */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+}
+
+.content {
+    flex: 1.5; /* Mengatur konten agar lebih lebar dari gambar */
+    text-align: left; /* Menempatkan tulisan di sebelah kiri */
+    font-size: 2.5rem; /* Ukuran font yang lebih kecil */
+    line-height: 1.6; /* Jarak antar baris */
+    color: #333; /* Warna teks gelap */
+}
+
+.About p {
+    font-size: 1.1rem; /* Ukuran font paragraf lebih kecil */
+    color: #555;
+    margin-top: -40px;
+}
+
+
+/*about page end */
